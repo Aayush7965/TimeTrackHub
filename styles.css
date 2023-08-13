@@ -1,0 +1,78 @@
+body {
+    background-image: url("./assets/background.svg");
+    background-size: cover;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5.5rem;
+    margin: 0;
+    color: #fdfdb1;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 6px -2px 0px rgba(0,128,128,1);
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column; 
+    padding-top: 4.8rem;
+    padding-left: 4.8rem;
+    padding-bottom: 1.25rem;
+    gap: 2.688rem;
+
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 2.688rem;
+}
+
+.button {
+    font-size: 1.375rem;
+    padding: 1rem 5rem;
+    align-items: center;
+    border-radius: 100px;
+    border: 0;
+    background-color: #0E5467;
+    color: #FFFFFF;
+}
+
+/* When disabled */
+.disabled {
+    opacity: 0.7;
+    background-color: #1d4a4a;
+}
+
+.timePassedContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.938rem;
+}
+
+p {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fdfdb1;
+    font-family: 'Inter', sans-serif;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2.813rem;
+    color: #fdfdb1;
+    font-family: 'Inter', sans-serif;
+}
+
+.timeRemainingContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.938rem;
+    padding-left: 4.8rem;
+    padding-top: 1.25rem;
+}
+
+hr {
+    border: 0.25rem solid #fdfdb1;
+    background-color: #fdfdb1;
+    box-shadow: 9px -3px 0px 2px #008080;
+}
