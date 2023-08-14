@@ -66,7 +66,6 @@ function updateTimer() {
 }
 
 function startStopwatch() {
-  noSleep.enable();
   if (canUseStartButton == 0) {
     startButton.classList.add("disabled");
     remainingTime();
@@ -75,9 +74,9 @@ function startStopwatch() {
       intervalId = setInterval(updateTimer, 1000);
     }
     canUseStartButton = 1;
-    
   }
 }
+
 function stopStopwatch() {
   startButton.classList.remove("disabled");
   canUseStartButton = 0;
@@ -89,14 +88,3 @@ function stopStopwatch() {
   document.querySelector(".remainingTime").innerHTML = "00h 00m";
   document.querySelector(".passedTime").innerHTML = "00h 00m 00s";
 }
-
-
-import NoSleep from "./nosleep.js";
-
-
-var noSleep = new NoSleep();
-
-
-
-
-
