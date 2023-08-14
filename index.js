@@ -3,6 +3,7 @@ let startTime;
 let intervalId;
 let canUseStartButton = 0;
 
+
 const timeElement = document.querySelector(".passedTime");
 const startButton = document.querySelector(".start");
 const resetButton = document.querySelector(".reset");
@@ -88,3 +89,4 @@ function stopStopwatch() {
   document.querySelector(".remainingTime").innerHTML = "00h 00m";
   document.querySelector(".passedTime").innerHTML = "00h 00m 00s";
 }
+

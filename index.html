@@ -14,20 +14,17 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-
-      <div class="topContainer">
-        <h1>00:00 AM</h1>
-        <div class="buttonContainer">
-          <button class="start button">Start</button>
-          <button class="reset button">Reset</button>
-        </div>
-        <div class="timePassedContainer">
-          <p>Time Passed</p>
-          <h2 class="passedTime">00h 00m 00s</h2>
-          <hr />
-        </div>
-      
-      
+    <div class="topContainer">
+      <h1>00:00 AM</h1>
+      <div class="buttonContainer">
+        <button class="start button">Start</button>
+        <button class="reset button">Reset</button>
+      </div>
+      <div class="timePassedContainer">
+        <p>Time Passed</p>
+        <h2 class="passedTime">00h 00m 00s</h2>
+        <hr />
+      </div>
 
       <div class="timeRemainingContainer">
         <p>Time Remaining</p>
@@ -35,5 +32,9 @@
       </div>
     </div>
     <script src="./index.js"></script>
+    <script src="./NoSleep.js">
+      const noSleep = new NoSleep();
+      noSleep.enable();
+    </script>
   </body>
 </html>
