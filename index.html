@@ -31,20 +31,7 @@
         <h2 class="remainingTime">00h 00m</h2>
       </div>
     </div>
-    <script src="./index.js"></script>
     <script src="./NoSleep.js"></script>
-   
-
-    <script>
-      var noSleep = new NoSleep();
-      var wakeLockEnabled = false;
-      var toggleEl = document.querySelector("#toggle");
-      toggleEl.addEventListener('click', function() {
-        if (!wakeLockEnabled) {
-          noSleep.enable(); // keep the screen on!
-          wakeLockEnabled = true;
-        }
-      }, false);
-    </script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
