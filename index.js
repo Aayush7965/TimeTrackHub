@@ -1,9 +1,9 @@
 import {currentTime} from "./getCurrentTime.js";
-import { updateTimer, startStopwatch, stopStopwatch } from "./getStopwatch.js";
-import {getSleep} from "./getSleep.js"
+import {getSleep} from "./getSleep.js";
+import {setStartButton, setResetButton} from "./setButtons.js";
 
+setStartButton();
+setResetButton();
 currentTime();
-startStopwatch();
-updateTimer();
-stopStopwatch();
 getSleep();
+

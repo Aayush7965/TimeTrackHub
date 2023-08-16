@@ -1,16 +1,13 @@
 import {remainingTime, timeRemainingTimeoutId} from "./getRemainingTime.js";
+import {startButton} from "./setButtons.js";
 
 let startTime;
 let intervalId;
 let canUseStartButton = 0;
-const timeElement = document.querySelector(".passedTime"); //time will add 1 sec at a time
-const startButton = document.querySelector(".start"); //start button
-const resetButton = document.querySelector(".reset"); //stop button
+const timeElement = document.querySelector(".passedTime");
 
-startButton.addEventListener("click", startStopwatch); //start button
-resetButton.addEventListener("click", stopStopwatch); //stop button
 
-// Stop watch
+// Stopwatch
 function startStopwatch() {
   if (canUseStartButton === 0) {
     startButton.classList.add("disabled");
@@ -22,6 +19,7 @@ function startStopwatch() {
     canUseStartButton = 1;
   }
 }
+
 
 function updateTimer() {
   const currentTime = new Date();
@@ -46,5 +44,6 @@ function stopStopwatch() {
   document.querySelector(".remainingTime").innerHTML = "00h 00m";
   timeElement.innerHTML = "00h 00m 00s";
 }
+
 
 export { updateTimer, startStopwatch, stopStopwatch };
